@@ -13,11 +13,11 @@ module.exports = {
 
     var options         = app.options['ember-cli-ted-bootstrap'] || {};
     var modulePath      = path.relative(app.project.root, __dirname);
-    var bootstrapPath   = 'bower_components/ted_bootstrap/dist/';
+    var bootstrapPath   = 'vendor/ted_bootstrap/dist/';
 
     // Import css from bootstrap
     app.import(path.join(bootstrapPath, 'ted_bootstrap.css'));
-    
+
 
 
     // var emberBsPath     = 'vendor/ember-addons.bs_for_ember/dist';
