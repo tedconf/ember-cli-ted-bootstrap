@@ -1,0 +1,38 @@
+%section.tbs-section
+  %h1.page-header#buttons Buttons
+
+  %h3#options Options
+  %p
+    Use any of the available button classes
+    to quickly create a styled button.
+
+  .tbs-example
+    %button.btn.btn-default Default
+    %button.btn.btn-primary Primary
+    %button.btn.btn-success Success
+    %button.btn.btn-info Info
+    %button.btn.btn-warning Warning
+    %button.btn.btn-danger Danger
+    %button.btn.btn-link Link
+  .highlight
+    :markdown
+          -# Standard button
+          %button.btn.btn-default Default
+
+          -# Provides extra visual weight and identifies the primary action in a set of buttons
+          %button.btn.btn-primary Primary
+
+          -# Indicates a successful or positive action
+          %button.btn.btn-success Success
+
+          -# Contextual button for informational alert messages
+          %button.btn.btn-info Info
+
+          -# Indicates caution should be taken with this action
+          %button.btn.btn-warning Warning
+
+          -# Indicates a dangerous or potentially negative action
+          %button.btn.btn-danger Danger
+
+          -# Deemphasize a button by making it look like a link while maintaining button behavior
+          %button.btn.btn-link Link

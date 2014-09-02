@@ -1,0 +1,37 @@
+%section.tbs-section
+  %h1.page-header#input-groups Input Groups
+  %p.lead
+    Extend form controls by adding text or buttons before, after,
+    or on both sides of any text-based input.
+    Use
+    %code .input-group
+    with an
+    %code .input-group-addon
+    to prepend or append elements to a single
+    %code .form-control
+
+  %h2#input-groups-buttons Button addons
+  %p
+    Buttons in input groups are a bit different
+    and require one extra level of nesting.
+    Instead of
+    %code .input-group-addon
+    you'll need to use
+    %code .input-group-btn
+    to wrap the buttons.
+    This is required due to default browser styles
+    that cannot be overridden.
+
+  .tbs-example
+    .input-group
+      %input.form-control
+      %span.input-group-btn
+        %button.btn.btn-default
+          = icon 'search', '', class: 'fa-lg'
+  .highlight
+    :markdown
+          .input-group
+            %input.form-control
+            %span.input-group-btn
+              %button.btn.btn-default
+                = icon 'search', '', class: 'fa-lg'

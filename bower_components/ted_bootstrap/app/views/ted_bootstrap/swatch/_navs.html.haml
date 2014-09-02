@@ -1,0 +1,35 @@
+%section.tbs-section
+  %h1.page-header#navs Navs
+  %p.lead
+    Navs available in Bootstrap have shared markup,
+    starting with the base
+    %code .nav
+    class, as well as shared states.
+    Swap modifier classes to switch between each style.
+
+  %h3#navs-flaps Flaps
+  %p
+    Flaps are intended for use as top-level navigation items.
+    Note the
+    %code .nav-flaps
+    class requires the
+    %code .nav
+    base class.
+
+  .tbs-example
+    %ul.nav.nav-flaps
+      %li.active
+        %a{href: '#'} Home
+      %li
+        %a{href: '#'} Profile
+      %li
+        %a{href: '#'} Messages
+  .highlight
+    :markdown
+          %ul.nav.nav-flaps
+            %li.active
+              %a{href: '#'} Home
+            %li
+              %a{href: '#'} Profile
+            %li
+              %a{href: '#'} Messages

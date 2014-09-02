@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "bootstrap-sass-official": "3.1.1+2",
+    "font-awesome": "4.1.0"
+  },
+  "name": "TED Bootstrap",
+  "main": "dist/",
+  "ignore": [
+    "!dist/**/*"
+  ],
+  "homepage": "https://github.com/tedconf/ted_bootstrap",
+  "_release": "1fecedd626",
+  "_resolution": {
+    "type": "commit",
+    "commit": "1fecedd626eee8c77f72ab3c2504823a93874a86"
+  },
+  "_source": "git@github.com:tedconf/ted_bootstrap.git",
+  "_target": "1fecedd626eee8c77f72ab3c2504823a93874a86",
+  "_originalSource": "git@github.com:tedconf/ted_bootstrap"
+}

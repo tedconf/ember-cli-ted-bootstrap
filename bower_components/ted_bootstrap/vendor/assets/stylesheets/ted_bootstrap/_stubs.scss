@@ -1,0 +1,28 @@
+//
+// Stubs
+// --------------------------------------------------
+
+.stub {
+  @include inline-block;
+  background: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 32px;
+  padding: 4px 6px 4px 12px;
+}
+
+.stub-label {
+  @include inline-block;
+  font-size: $font-size-small;
+  overflow: hidden;
+  max-width: 120px;
+  text-overflow: ellipsis;
+}
+
+.stub-remove {
+  color: #777;
+  margin-left: 6px;
+
+  &:hover {
+    color: #999;
+  }
+}

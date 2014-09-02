@@ -1,0 +1,44 @@
+//
+// Forms
+// --------------------------------------------------
+
+// Special styles for select boxes
+
+select.form-control {
+  // Custom gradient & arrow background
+  @include appearance(none);
+  @include background(
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAXBAMAAADq5DJkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURQAAADIyMiYmJjIyMjAwMDMzMzExMczMzG/7/KwAAAAHdFJOUwCoC4YjllkQbp1YAAAARklEQVQY02MoYEAB9OYyGTswMDgbwbgsgiEMLIEicFlDUQdXQbgsg7JgSKCwApzLZCgIlESYrCwIlERwmQyNUOxVUaCjBwG62A+AiSlt5gAAAABJRU5ErkJggg==")
+      right 15px center no-repeat,
+    linear-gradient(#FFF, #F2F2F2)
+  );
+  @include box-shadow(none);
+
+  // Make sure the selected option doesn't
+  // overlap the background image
+  padding-right: 50px;
+
+  // Workaround for a Firefox bug:
+  // https://bugzilla.mozilla.org/show_bug.cgi?id=649849#c84
+  text-indent: 1px;
+  text-overflow: '';
+
+  &.input-lg,
+  &.input-sm {
+    line-height: 1.3;
+  }
+}
+
+// Checkboxes and radios
+
+.radio,
+.checkbox {
+  padding-left: 20px;
+
+  label {
+    display: inline;
+    font-weight: 400;
+
+    padding-left: 0;
+  }
+}

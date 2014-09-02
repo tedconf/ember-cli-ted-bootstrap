@@ -1,0 +1,28 @@
+%header.navbar.navbar-default
+  .container
+    .navbar-header
+      - if hamburger
+        .dropdown.navbar-hamburger
+          %button.navbar-hamburger-button{data: {toggle: :dropdown}}<
+            %span.icon-bar>
+            %span.icon-bar>
+            %span.icon-bar>
+          %ul.dropdown-menu.navbar-hamburger-dropdown{role: :menu, aria: {labelledby: :dLabel}}
+            %li{role: :presentation}
+              %a{href: 'http://inside.ted.com'} Inside
+            %li{role: :presentation, class: 'divider'}
+            %li{role: :presentation}
+              %a{href: 'http://cds.ted.com'} CDS
+            %li{role: :presentation}
+              %a{href: 'http://dam.ted.com'} DAM
+
+      %a.navbar-brand{:href => app_root}
+        - if logo_side == :right
+          %span= app_name
+
+        %span.navbar-brand-logo.s-logo TED
+
+        - unless logo_side == :right
+          %span= app_name
+
+      = captured

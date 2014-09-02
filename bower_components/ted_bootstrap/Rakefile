@@ -1,0 +1,42 @@
+require "bundler/gem_tasks"
+require 'sprockets'
+require 'compass'
+require 'sass'
+
+task dist: [:clean, :bower, :assets]
+
+desc "Clean dist dir"
+task :clean do
+  puts "cleaning"
+  system("rm -rf ./dist/*")
+end
+
+desc "Install bower components"
+task :bower do
+  system("npm install -g bower")
+  system("bower install")
+end
+
+desc "build ted_bootstrap via compass compile"
+task :assets do
+  Sass.load_paths << Compass::Frameworks['compass'].stylesheets_directory
+  Sass.load_paths << 'vendor/assets/sprites'
+  Sass.load_paths << 'bower_components/bootstrap-sass-official/vendor/assets/stylesheets'
+  Sass.load_paths << 'bower_components/font-awesome/scss/'
+
+  Compass.add_project_configuration('compass_config.rb')
+
+  env = Sprockets::Environment.new
+  env.append_path 'vendor/assets/stylesheets'
+  env.append_path 'vendor/assets/javascripts'
+  env.append_path 'bower_components/bootstrap-sass-official/vendor/assets/javascripts/'
+
+  File.write('dist/ted_bootstrap.js', env['ted_bootstrap.js'].to_s)
+  File.write('dist/ted_bootstrap.css', env['ted_bootstrap/static.scss'].to_s)
+
+  Dir.glob("bower_components/font-awesome/fonts/*").each do |file|
+    cp file, "dist/ted_bootstrap/"
+  end
+
+  puts "done"
+end

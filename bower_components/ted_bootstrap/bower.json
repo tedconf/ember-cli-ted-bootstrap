@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "bootstrap-sass-official": "3.1.1+2",
+    "font-awesome": "4.1.0"
+  },
+  "name": "TED Bootstrap",
+  "version": "3.1.1+2",
+  "main": "dist/",
+  "ignore": [
+    "!dist/**/*"
+  ]
+}

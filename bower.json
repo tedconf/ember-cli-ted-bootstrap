@@ -1,0 +1,6 @@
+{
+  "name": "ember-cli-bootstrap",
+  "dependencies": {
+    "ted_bootstrap": "git@github.com:tedconf/ted_bootstrap#1fecedd626eee8c77f72ab3c2504823a93874a86"
+  }
+}

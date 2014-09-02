@@ -1,0 +1,72 @@
+%section.tbs-section
+  %h1.page-header#grid Grid system
+  %p.lead
+    Bootstrap includes a responsive, mobile first
+    fluid grid system that appropriately scales up to 12 columns
+    as the device or viewport size increases.
+    It includes predefined classes for easy layout options,
+    as well as powerful mixins for generating more semantic layouts.
+
+  %h3#grid-options Grid options
+  %p
+    See how aspects of the Bootstrap grid system work
+    across multiple devices with a handy table.
+
+  %table.table.table-bordered.table-striped
+    %thead
+      %tr
+        %th
+        %th
+          Extra small devices
+          %small (&lt;768px)
+        %th
+          Small devices
+          %small (&ge;768px)
+        %th
+          Medium devices
+          %small (&ge;992px)
+        %th
+          Large devices
+          %small (&ge;1200px)
+    %tbody
+      %tr
+        %th Grid behavior
+        %td Horizontal at all times
+        %td{colspan: 3} Collapsed to start, horizontal above breakpoints
+      %tr
+        %th Container width
+        %td None (auto)
+        %td 750px
+        %td 970px
+        %td 1170px
+      %tr
+        %th Class prefix
+        %td
+          %code .col-xs-
+        %td
+          %code .col-sm-
+        %td
+          %code .col-md-
+        %td
+          %code .col-lg-
+      %tr
+        %th # of columns
+        %td{colspan: 4} 12
+      %tr
+        %th Column width
+        %td.text-muted Auto
+        %td 60px
+        %td 78px
+        %td 95px
+      %tr
+        %th Gutter width
+        %td{colspan: 4} 30px (15px on each side of a column)
+      %tr
+        %th Nestable
+        %td{colspan: 4} Yes
+      %tr
+        %th Offsets
+        %td{colspan: 4} Yes
+      %tr
+        %th Column ordering
+        %td{colspan: 4} Yes

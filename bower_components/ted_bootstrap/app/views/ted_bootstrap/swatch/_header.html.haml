@@ -1,0 +1,45 @@
+%section.tbs-section
+  %h1.page-header#header Header
+  %p.lead
+    The
+    %code tb_header
+    helper is provided to create
+    uniform application headers.
+
+  %h3#header-example Basic Example
+
+  .tbs-example
+    = tb_header app_name: 'My App'
+  .highlight
+    :markdown
+          = tb_header app_name: 'My App'
+
+  %h3#header-options All Options
+  %p
+    The following options can be used with the helper:
+
+  %dl.dl-horizontal
+    %dt app_name
+    %dd
+      The name of your application; defaults to the Rails app name.
+
+    %dt app_root
+    %dd
+      The root URL for your application, defaults to /
+
+    %dt hamburger
+    %dd
+      Boolean; does not render the internal apps hamburger menu if
+      %code false
+
+    %dt logo_side
+    %dd
+      %code :left
+      or
+      %code :right
+      &mdash;
+      determines which side of the application
+      name the logo sits on.
+      Defaults left, but sometimes
+      (as in "Inside TED")
+      the application name should come first.

@@ -1,0 +1,136 @@
+%section.tbs-section
+  %h1.page-header#forms Forms
+
+  %h2#forms-example Basic example
+
+  .tbs-example
+    %form
+      .form-group
+        %label Email address
+        %input.form-control{type: 'email', placeholder: 'Enter email'}
+      .form-group
+        %label Password
+        %input.form-control{type: 'password', placeholder: 'Password'}
+      .checkbox
+        %label
+          %input{type: 'checkbox'}
+          Check me out
+      %button.btn.btn-default Submit
+  .highlight
+    :markdown
+          %form
+            .form-group
+              %label Email address
+              %input.form-control{type: 'email', placeholder: 'Enter email'}
+            .form-group
+              %label Password
+              %input.form-control{type: 'password', placeholder: 'Password'}
+            .checkbox
+              %label
+                %input{type: 'checkbox'}
+                Check me out
+
+  %h2#forms-controls Supported controls
+
+  %h3 Inputs
+  .tbs-example
+    %form
+      %input.form-control{placeholder: 'Text input'}
+  .highlight
+    :markdown
+          %input.form-control{placeholder: 'Text input'}
+
+  %h3 Textarea
+  .tbs-example
+    %form
+      %textarea.form-control{rows: 3}
+  .highlight
+    :markdown
+          %textarea.form-control{rows: 3}
+
+  %h3 Checkboxes and radios
+
+  %h4 Default (stacked)
+  .tbs-example
+    %form
+      .checkbox
+        %label
+          %input{type: 'checkbox'}
+          Option one is this and that&mdash;be sure to include why it's great
+      %br
+      .radio
+        %label
+          %input{type: 'radio', name: 'optionsRadios', checked: true}
+          Option one is this and that&mdash;be sure to include why it's great
+      .radio
+        %label
+          %input{type: 'radio', name: 'optionsRadios'}
+          Option two can be something else and selecting it will deselect option one
+  .highlight
+    :markdown
+          .checkbox
+            %label
+              %input{type: 'checkbox'}
+              Option one is this and that&mdash;be sure to include why it's great
+
+          .radio
+            %label
+              %input{type: 'radio', name: 'optionsRadios', checked: true}
+              Option one is this and that&mdash;be sure to include why it's great
+          .radio
+            %label
+              %input{type: 'radio', name: 'optionsRadios'}
+              Option two can be something else and selecting it will deselect option one
+
+  %h4 Inline checkboxes
+  %p
+    Use the
+    %code .checkbox-inline
+    or
+    %code .radio-inline
+    classes on a series of checkboxes or radios
+    for controls that appear on the same line.
+  .tbs-example
+    %form
+      %label.checkbox-inline
+        %input{type: 'checkbox'}
+        1
+      %label.checkbox-inline
+        %input{type: 'checkbox'}
+        2
+      %label.checkbox-inline
+        %input{type: 'checkbox'}
+        3
+      %label.checkbox-inline
+        %input{type: 'checkbox'}
+        4
+  .highlight
+    :markdown
+          %label.checkbox-inline
+            %input{type: 'checkbox'}
+            1
+          %label.checkbox-inline
+            %input{type: 'checkbox'}
+            2
+          %label.checkbox-inline
+            %input{type: 'checkbox'}
+            3
+          %label.checkbox-inline
+            %input{type: 'checkbox'}
+            4
+
+  %h3 Selects
+  .tbs-example
+    %form
+      %select.form-control
+        %option 1
+        %option 2
+        %option 3
+        %option 4
+  .highlight
+    :markdown
+          %select.form-control
+            %option 1
+            %option 2
+            %option 3
+            %option 4

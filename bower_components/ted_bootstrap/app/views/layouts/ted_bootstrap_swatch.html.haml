@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title TED Bootstrap Swatch
+    = stylesheet_link_tag 'ted_bootstrap_swatch', :media => 'all'
+    = javascript_include_tag 'ted_bootstrap_swatch'
+  %body
+    = tb_header app_name: 'Bootstrap Swatch', app_root: '/swatch'
+
+    = yield
+
+    %footer.tbs-footer
+      .container
+        TED Bootstrap
+        v#{TedBootstrap::VERSION}
+        &#9829;
+        by
+        TED Tech

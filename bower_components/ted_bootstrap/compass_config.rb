@@ -1,0 +1,11 @@
+css_dir = "./dist/"
+http_path = '/'
+http_fonts_path = ''
+http_fonts_dir = ''
+http_images_path = '/'
+http_generated_images_path = '/'
+images_dir = "vendor/assets/sprites"
+generated_images_dir = "./dist/"
+javascripts_dir = "./dist/"
+relative_assets = true
+output_style = :compressed
