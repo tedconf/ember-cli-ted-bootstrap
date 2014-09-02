@@ -16,7 +16,9 @@ module.exports = {
     var bootstrapPath   = 'bower_components/ted_bootstrap/dist/';
 
     // Import css from bootstrap
-    app.import(path.join(bootstrapPath, 'ted_bootstrap.css'));
+    // app.import(path.join(bootstrapPath, 'ted_bootstrap.css'));
+    app.import('bower_components/ted_bootstrap/dist/ted_bootstrap.css');
+
 
 
     // var emberBsPath     = 'vendor/ember-addons.bs_for_ember/dist';
