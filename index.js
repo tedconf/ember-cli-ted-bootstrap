@@ -14,7 +14,7 @@ module.exports = {
     var options         = app.options['ember-cli-ted-bootstrap'] || {};
     var modulePath      = path.relative(app.project.root, __dirname);
     var bootstrapPath   = 'vendor/ted_bootstrap/dist/';
-    var otherAssets     = fs.readdirSync(path.join(bootstrapPath, '/ted_bootstrap'));
+    var otherAssets     = fs.readdirSync(path.join(bootstrapPath, 'ted_bootstrap'));
 
     // Import css/js from bootstrap
     app.import(path.join(bootstrapPath, 'ted_bootstrap.css'));
