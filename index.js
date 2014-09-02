@@ -14,11 +14,17 @@ module.exports = {
     var options         = app.options['ember-cli-ted-bootstrap'] || {};
     var modulePath      = path.relative(app.project.root, __dirname);
     var bootstrapPath   = 'vendor/ted_bootstrap/dist/';
+    var otherAssets     = fs.readdirSync(path.join(bootstrapPath, '/ted_bootstrap'));
 
-    // Import css from bootstrap
+    // Import css/js from bootstrap
     app.import(path.join(bootstrapPath, 'ted_bootstrap.css'));
+    app.import(path.join(bootstrapPath, 'ted_bootstrap.js'));
 
-
+    // Import other assets
+    otherAssets.forEach(function(file) {
+      var fileName = file.split('.')[0];
+      app.import(path.join(bootstrapPath, 'ted_bootstrap/' + fileName), { destDir: '/assets/ted_bootstrap' });
+    });
 
     // var emberBsPath     = 'vendor/ember-addons.bs_for_ember/dist';
     // var javascriptsPath = path.join(emberBsPath, 'js');
