@@ -32,8 +32,11 @@ Usage:
 
 ```hbs
 {{#ted-navbar name='Video Metrics'}}
-  <ul aria-labelledby="dLabel" class="dropdown-menu navbar-hamburger-dropdown" role="menu">
+  <ul class="dropdown-menu navbar-hamburger-dropdown" role="menu">
     <li><a href="http://inside.ted.com">Inside</a></li>
+    <li class="divider"></li>
+    <li><a href="http://cds.ted.com">CDS</a></li>
+    <li><a href="http://dam.ted.com">DAM</a></li>
   </ul>
 {{/ted-navbar}}
 ```
