@@ -8,9 +8,9 @@
       {{yield}}
     </div>
 
-    <a class="navbar-brand" href="/">
+    {{#link-to 'application' class='navbar-brand'}}
       <span class="navbar-brand-logo s-logo">TED</span>
       <span>{{name}}</span>
-    </a>
+    {{/link-to}}
   </div>
 </header>
