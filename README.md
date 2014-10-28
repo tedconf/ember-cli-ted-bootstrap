@@ -22,7 +22,11 @@ You'll now have access to TED bootstrap styles/js, and some extra components. Se
 
 Refer to [TED bootsrap]() and [Bootstrap 3]() for docs. There are some additional components included.
 
-### ted-navbar
+- [ted-navbar](#ted-navbar)
+- [ted-flaps](#ted-flaps)
+- [ted-panel](#ted-panel)
+
+<h3 id='ted-navbar'>ted-navbar</h3>
 
 A navbar for the top of your app.
 
@@ -41,7 +45,7 @@ Usage:
 {{/ted-navbar}}
 ```
 
-### ted-flaps
+<h3 id="ted-flaps">ted-flaps</h3>
 
 A subnav typically used for URL routes within your app.
 
@@ -94,4 +98,46 @@ export default Router;
 
 ```
 
+<h3 id="ted-panel">ted-panel</h3>
 
+A collapsible panel wrapping [Bootstrap's collapsible JS plugin](http://getbootstrap.com/javascript/#collapse).
+
+Works well with standard markup for Bootstrap's panels.
+
+**Usage**
+
+- Add a `.ted-panel-toggle` class on the collapse trigger.
+- Add `.ted-panel-collapse .panel-collapse .collapse` classes on the collapsible element.
+  - TODO: have ted-panel-collapse automatically extend those classes
+  - Optional: add `.in` class to start out open
+
+Bare-bones:
+
+```hbs
+{{#ted-panel class='panel panel-default'}}
+  <a href="#" class='ted-panel-toggle'>More details</a>
+  <div class='ted-panel-collapse'>
+    <p>Some more info</p>
+  </div>
+{{/ted-panel}}  
+```
+
+Using Bootstrap's .panel markup:
+
+```hbs
+{{#ted-panel classBinding='isExcluded :panel :panel-default'}}
+  <div class="panel-heading">
+    <h3 class='panel-title'>
+      <a href='#' class='ted-panel-toggle'>
+        More details
+      </a>
+    </h3>
+  </div>
+
+  <div class="ted-collapse panel-collapse collapse">
+    <div class="panel-body">
+      <p>Your content</p>
+    </div>
+  </div>
+{{/ted-panel}}
+```
