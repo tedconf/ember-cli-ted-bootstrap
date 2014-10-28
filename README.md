@@ -114,7 +114,7 @@ Works well with standard markup for Bootstrap's panels.
 Bare-bones:
 
 ```hbs
-{{#ted-panel class='panel panel-default'}}
+{{#ted-panel}}
   <a href="#" class='ted-panel-toggle'>More details</a>
   <div class='ted-panel-collapse panel-collapse collapse'>
     <p>Some more info</p>
