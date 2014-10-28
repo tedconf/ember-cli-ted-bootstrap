@@ -6,9 +6,9 @@ export default Ember.Component.extend({
 
   didInsertElement: function() {
     var _this = this;
-    var collapsibleEl = _this.$('.ted-collapse');
+    var collapsibleEl = _this.$('.ted-panel-collapse');
 
-    this.$('.ted-collapse').collapse({toggle: false});
+    this.$('.ted-panel-collapse').collapse({toggle: false});
     this.set('isOpen', collapsibleEl.hasClass('in'));
 
     this.$('.ted-panel-toggle').click(function(e) {

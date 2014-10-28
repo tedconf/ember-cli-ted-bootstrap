@@ -134,7 +134,7 @@ Using Bootstrap's .panel markup:
     </h3>
   </div>
 
-  <div class="ted-collapse panel-collapse collapse">
+  <div class="ted-panel-collapse panel-collapse collapse">
     <div class="panel-body">
       <p>Your content</p>
     </div>
