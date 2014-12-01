@@ -5,12 +5,13 @@
       <button class="navbar-hamburger-button" data-toggle="dropdown">
         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
       </button>
-      {{yield}}
     </div>
 
     {{#link-to 'application' class='navbar-brand'}}
       <span class="navbar-brand-logo s-logo">TED</span>
       <span>{{name}}</span>
     {{/link-to}}
+
+    {{yield}}
   </div>
 </header>
