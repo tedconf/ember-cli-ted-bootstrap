@@ -5,8 +5,7 @@
   "author": "Sam Selikoff",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "bower install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "ember-addon",
