@@ -36,13 +36,6 @@ Usage:
 
 ```hbs
 {{#ted-navbar name='Video Metrics'}}
-  <ul class="dropdown-menu navbar-hamburger-dropdown" role="menu">
-    <li><a href="http://inside.ted.com">Inside</a></li>
-    <li class="divider"></li>
-    <li><a href="http://cds.ted.com">CDS</a></li>
-    <li><a href="http://dam.ted.com">DAM</a></li>
-  </ul>
-{{/ted-navbar}}
 ```
 
 <h3 id="ted-flaps">ted-flaps</h3>
