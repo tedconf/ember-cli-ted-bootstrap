@@ -35,7 +35,7 @@ A navbar for the top of your app.
 Usage:
 
 ```hbs
-{{#ted-navbar name='Video Metrics'}}
+{{ted-navbar name='Video Metrics'}}
 ```
 
 <h3 id="ted-flaps">ted-flaps</h3>
