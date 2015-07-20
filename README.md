@@ -1,19 +1,14 @@
 ember-cli-ted-bootstrap
 =======================
 
-Include TED Bootstrap in your ember-cli project
-
-## Requirements
-
-- ember-cli version '0.0.41' or later
-- bower
+Include TED Bootstrap and a few bootstrap-related components in your ember-cli project
 
 ### Installation
 
 From your project's root, run
 
 ```
-npm install --save-dev git+ssh://git@github.com/tedconf/ember-cli-ted-bootstrap.git
+npm install --save-dev git+ssh://git@github.com/tedconf/ember-cli-ted-bootstrap.git#v0.5.0
 ```
 
 You'll now have access to TED bootstrap styles/js, and some extra components. See below for details.
@@ -55,10 +50,10 @@ Usage:
 // controllers/application.js
 import Ember from 'ember';
 
-export default Ember.ObjectController.extend({
+export default Ember.Controller.extend({
 
   linksMeta: [
-    {name: 'delivery'},
+    {name: 'delivery'}, // name is the name of a route you've declared in router.js
     {name: 'partners'},
     {name: 'programming'},
     {name: 'talk-lookup', label: 'Search'},
@@ -70,25 +65,6 @@ export default Ember.ObjectController.extend({
 ```hbs
 <!-- /application.hbs -->
 {{ted-flaps links=linksMeta}}
-```
-
-```js
-// router.js
-import Ember from 'ember';
-
-var Router = Ember.Router.extend({
-  location: VideometricsNewENV.locationType
-});
-
-Router.map(function() {
-  this.route('delivery');
-  this.route('partners');
-  this.route('programming');
-  this.route('talk-lookup');
-});
-
-export default Router;
-
 ```
 
 <h3 id="ted-panel">ted-panel</h3>
