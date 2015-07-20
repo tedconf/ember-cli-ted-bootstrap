@@ -110,3 +110,9 @@ Using Bootstrap's .panel markup:
   </div>
 {{/ted-panel}}
 ```
+
+## Developing
+
+Clone the repo and run `ember s` from the root directory. This will build and serve a demo ember app that lives in `/tests/dummy`. You can use this app to experiment with the components as you develop them.
+
+You can also write integration tests for the components. Right now there's a bug that's preventing us from testing any component with a `{{link-to}}` in it, which should be fixed soon. Otherwise, look at `/tests/integration` for an example, and also check out [this blog post](http://alisdair.mcdiarmid.org/2015/06/20/ember-component-integration-tests.html).
