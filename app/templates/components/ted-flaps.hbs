@@ -1,5 +1,5 @@
 <ul class="nav nav-flaps">
-  {{#each link in niceLinks}}
+  {{#each niceLinks as |link|}}
     {{#link-to link.name tagName="li" href=false}}
       {{link-to link.label link.name}}
     {{/link-to}}
