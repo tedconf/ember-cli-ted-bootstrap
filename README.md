@@ -6,6 +6,14 @@ This lets you independently update `ted-bootstrap` by updating the `bower.json` 
 
 Refer to [Bootstrap 3's docs](http://getbootstrap.com/) for reference on how to use Bootstrap.
 
+## Installation
+
+This is an OSS Ember addon, so install with
+
+```sh
+ember install ember-cli-ted-bootstrap
+```
+
 ## Components originally bundled in TED Bootstrap
 
 Previous versions of `ember-cli-ted-bootstrap` came with three components: `<ted-navbar>`, `<ted-flaps`, and `<ted-panel>`.
