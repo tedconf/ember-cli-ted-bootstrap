@@ -1,26 +1,16 @@
-# Ember-cli-ted-bootstrap
+# Ember CLI TED Bootstrap
 
-This README outlines the details of collaborating on this Ember addon.
+This addon adds the latest build of TED Bootstrap from S3 to your Ember app's `bower.json` file, installs it, and imports the associated assets into your build.
 
-## Installation
+This lets you independently update `ted-bootstrap` by updating the `bower.json` entry only. This is how other addons in the Ember ecosystem that rely on frontend assets work.
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Refer to [Bootstrap 3's docs](http://getbootstrap.com/) for reference on how to use Bootstrap.
 
-## Running
+## Components originally bundled in TED Bootstrap
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Previous versions of `ember-cli-ted-bootstrap` came with three components: `<ted-navbar>`, `<ted-flaps`, and `<ted-panel>`.
 
-## Running Tests
+- `<ted-navbar>` and `<ted-flaps>` now belong to a separate addon, [Ember CLI TED Navs]().
+- `<ted-panel>` is deprecated in favor of [Ember Collapsible Panel](http://tedconf.github.io/ember-collapsible-panel/).
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+These changes let us maintain and update the separate components more easily, and let developers update components independently, rather than needing to make sure everything in their app related to Bootstrap survives a large single upgrade.
