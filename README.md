@@ -1,5 +1,7 @@
 # Ember CLI TED Bootstrap
 
+> This addon is prepared for internal use by TED and is open-sourced for educational purposes but will not be supported for shared community use.
+
 This addon adds the latest build of TED Bootstrap from S3 to your Ember app's `bower.json` file, installs it, and imports the associated assets into your build.
 
 This lets you independently update `ted-bootstrap` by updating the `bower.json` entry only. This is how other addons in the Ember ecosystem that rely on frontend assets work.
