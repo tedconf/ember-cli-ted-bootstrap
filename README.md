@@ -16,6 +16,14 @@ This is an OSS Ember addon, so install with
 ember install ember-cli-ted-bootstrap
 ```
 
+If you're upgrading from a pre-1.0 version, make sure to run
+
+```sh
+ember g ember-cli-ted-bootstrap
+```
+
+to get the associated bower entry added to your `bower.json`.
+
 ## Components originally bundled in TED Bootstrap
 
 Previous versions of `ember-cli-ted-bootstrap` came with three components: `<ted-navbar>`, `<ted-flaps`, and `<ted-panel>`.
