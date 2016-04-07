@@ -10,7 +10,7 @@ module.exports = {
   included: function included(app) {
     // var options = app.options['ember-cli-ted-bootstrap'] || {};
 
-    let tedBootstrapPath = path.join(app.bowerDirectory, 'ted-bootstrap');
+    var tedBootstrapPath = path.join(app.bowerDirectory, 'ted-bootstrap');
     var additionalAssetsPath = path.join(tedBootstrapPath, 'ted_bootstrap');
     var otherAssets = fs.readdirSync(additionalAssetsPath);
 
