@@ -28,7 +28,7 @@ to get the associated bower entry added to your `bower.json`.
 
 Previous versions of `ember-cli-ted-bootstrap` came with three components: `<ted-navbar>`, `<ted-flaps`, and `<ted-panel>`.
 
-- `<ted-navbar>` and `<ted-flaps>` now belong to a separate addon, [Ember CLI TED Navs]().
+- `<ted-navbar>` now belongs to a separate addon and `<ted-flaps>` is deprecated in favor of `<ted-nav>`. Both can be found on [Ember CLI TED Navs](http://tedconf.github.io/ember-ted-navs/).
 - `<ted-panel>` is deprecated in favor of [Ember Collapsible Panel](http://tedconf.github.io/ember-collapsible-panel/).
 
 These changes let us maintain and update the separate components more easily, and let developers update components independently, rather than needing to make sure everything in their app related to Bootstrap survives a large single upgrade.
